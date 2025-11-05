@@ -6,6 +6,7 @@
 // SECCIÃ“N 1: VARIABLES Y TIPOS DE DATOS (10 puntos)
 // ============================================
 
+
 /**
  * Ejercicio 1.1: Declarar variables (2 puntos)
  * Crea tres variables con tu informaciÃ³n personal
@@ -15,9 +16,9 @@ function miInformacion() {
   // TODO: Declara las variables nombre, edad y carrera
   // Ejemplo: const nombre = "Juan";
   
-  const nombre = "";
-  const edad = 0;
-  const carrera = "";
+  const nombre = "David";
+  const edad = 28;
+  const carrera = "TSU en Desarrollo de Software";
   
   return { nombre, edad, carrera };
 }
