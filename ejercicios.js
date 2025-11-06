@@ -70,9 +70,11 @@ function celsiusAFahrenheit(celsius) {
  * @returns {string} - "par" o "impar"
  */
 function parOImpar(numero) {
-  // TODO: Usa el operador % (módulo) para determinar si es par o impar
-  // Pista: Un número es par si numero % 2 === 0
-  return "";
+  if (numero % 2 === 0) {
+    return "par";
+  } else {
+    return "impar";
+  }
 }
 
 /**
