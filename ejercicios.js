@@ -83,8 +83,11 @@ function parOImpar(numero) {
  * @returns {string} - "Aprobado" si nota >= 60, "Reprobado" si no
  */
 function evaluarNota(nota) {
-  // TODO: Implementa la lógica con if/else
-  return "";
+  if (nota >= 60) {
+    return "Aprobado";
+  } else {
+    return "Reprobado";
+  }
 }
 
 /**
