@@ -188,9 +188,20 @@ function tablaMultiplicar(numero) {
  * Ejemplo: numerosPares(10) debe retornar [2, 4, 6, 8, 10]
  */
 function numerosPares(n) {
-  // TODO: Crea un array con todos los números pares hasta n
   const pares = [];
+  
+  // Recorremos desde 2 hasta n
+  for (let i = 2; i <= n; i++) {
+    if (i % 2 === 0) { // Si es par, lo agregamos al arreglo
+      pares.push(i);
+    }
+  }
+  
   return pares;
+}
+
+// Ejemplo de prueba:
+console.log(numerosPares(10)); // [2, 4, 6, 8, 10]
 }
 
 // ============================================
