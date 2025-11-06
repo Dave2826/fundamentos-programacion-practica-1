@@ -127,17 +127,6 @@ function clasificarEdad(edad) {
     return "edad no válida";
   }
 }
-//-----------------
-//falta guardar la 2.4 ya resuelta
-
-
-
-
-
-
-
-
-
 
 // ============================================
 // SECCIÓN 3: FUNCIONES Y BUCLES (20 puntos)
@@ -151,8 +140,13 @@ function clasificarEdad(edad) {
  * @returns {number} - Factorial de n
  */
 function factorial(n) {
-  // TODO: Implementa usando un bucle for
-  return 1;
+  let resultado = 1;
+
+  for (let i = 1; i <= n; i++) {
+    resultado = resultado * i;
+  }
+
+  return resultado;
 }
 
 /**
