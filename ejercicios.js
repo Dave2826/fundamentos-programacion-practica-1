@@ -117,9 +117,27 @@ function mayorDeTres(a, b, c) {
  * @returns {string} - "menor" (0-17), "adulto" (18-64), "mayor" (65+)
  */
 function clasificarEdad(edad) {
-  // TODO: Implementa la clasificación con if/else if/else
-  return "";
+  if (edad >= 0 && edad <= 17) {
+    return "menor";
+  } else if (edad >= 18 && edad <= 64) {
+    return "adulto";
+  } else if (edad >= 65) {
+    return "mayor";
+  } else {
+    return "edad no válida";
+  }
 }
+//-----------------
+//falta guardar la 2.4 ya resuelta
+
+
+
+
+
+
+
+
+
 
 // ============================================
 // SECCIÓN 3: FUNCIONES Y BUCLES (20 puntos)
