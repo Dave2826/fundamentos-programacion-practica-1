@@ -214,18 +214,24 @@ console.log(numerosPares(10)); // [2, 4, 6, 8, 10]
  * @returns {number} - Suma de todos los elementos
  */
 function sumaArray(numeros) {
-  // TODO: Suma todos los elementos del array
-  return 0;
+  let suma = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i];
+  }
+  return suma;
 }
-
 /**
  * Ejercicio 4.2: Promedio de un array (5 puntos)
  * @param {Array<number>} numeros - Array de números
  * @returns {number} - Promedio de los números
  */
 function promedioArray(numeros) {
-  // TODO: Calcula el promedio (suma total / cantidad de elementos)
-  return 0;
+  if (numeros.length === 0) {
+    return 0;
+  }
+  const suma = sumaArray(numeros);
+  const promedio = suma / numeros.length;
+  return promedio;
 }
 
 /**
@@ -234,9 +240,14 @@ function promedioArray(numeros) {
  * @returns {number} - El número más grande del array
  */
 function encontrarMaximo(numeros) {
-  // TODO: Encuentra y retorna el número más grande
-  // Pista: Puedes usar Math.max(...numeros) o hacerlo con un bucle
-  return 0;
+  if (numeros.length === 0) return 0;
+  let maximo = numeros[0];
+  for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > maximo) {
+      maximo = numeros[i];
+    }
+  }
+  return maximo;
 }
 
 /**
@@ -247,8 +258,12 @@ function encontrarMaximo(numeros) {
  * Ejemplo: filtrarMayores([1, 5, 3, 8, 2], 4) debe retornar [5, 8]
  */
 function filtrarMayores(numeros, limite) {
-  // TODO: Crea un nuevo array con solo los números mayores al límite
   const mayores = [];
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] > limite) {
+      mayores.push(numeros[i]);
+    }
+  }
   return mayores;
 }
 
@@ -259,9 +274,10 @@ function filtrarMayores(numeros, limite) {
  * Ejemplo: invertirArray([1, 2, 3, 4]) debe retornar [4, 3, 2, 1]
  */
 function invertirArray(arr) {
-  // TODO: Invierte el orden de los elementos
-  // Pista: Puedes usar arr.reverse() o hacerlo manualmente
   const invertido = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    invertido.push(arr[i]);
+  }
   return invertido;
 }
 
