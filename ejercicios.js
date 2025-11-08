@@ -202,7 +202,6 @@ function numerosPares(n) {
 
 // Ejemplo de prueba:
 console.log(numerosPares(10)); // [2, 4, 6, 8, 10]
-}
 
 // ============================================
 // SECCIÓN 4: ARRAYS (25 puntos)
