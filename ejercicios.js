@@ -363,16 +363,18 @@ function obtenerColumna(matriz, indiceColumna) {
  */
 function transponer(matriz) {
   const transpuesta = [];
+
   for (let i = 0; i < matriz[0].length; i++) {
-    const fila = [];
+    const nuevaFila = [];
     for (let j = 0; j < matriz.length; j++) {
-      fila.push(matriz[j][i]);
+      nuevaFila.push(matriz[j][i]);
     }
-    transpuesta.push(fila);
+
+    transpuesta.push(nuevaFila);
   }
+
   return transpuesta;
 }
-
 // ============================================
 // NO MODIFIQUES ESTA LÍNEA - NECESARIA PARA LOS TESTS
 // ============================================
