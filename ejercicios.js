@@ -294,8 +294,14 @@ function invertirArray(arr) {
  * Ejemplo: crearMatriz(2, 3) debe retornar [[0, 0, 0], [0, 0, 0]]
  */
 function crearMatriz(filas, columnas) {
-  // TODO: Crea una matriz de filas x columnas llena de ceros
   const matriz = [];
+  for (let i = 0; i < filas; i++) {
+    const fila = [];
+    for (let j = 0; j < columnas; j++) {
+      fila.push(0);
+    }
+    matriz.push(fila);
+  }
   return matriz;
 }
 
@@ -306,9 +312,13 @@ function crearMatriz(filas, columnas) {
  * Ejemplo: sumaMatriz([[1, 2], [3, 4]]) debe retornar 10
  */
 function sumaMatriz(matriz) {
-  // TODO: Suma todos los elementos de la matriz
-  // Necesitarás dos bucles: uno para las filas y otro para las columnas
-  return 0;
+  let suma = 0;
+  for (let i = 0; i < matriz.length; i++) {
+    for (let j = 0; j < matriz[i].length; j++) {
+      suma += matriz[i][j];
+    }
+  }
+  return suma;
 }
 
 /**
@@ -319,8 +329,7 @@ function sumaMatriz(matriz) {
  * Ejemplo: obtenerFila([[1, 2], [3, 4], [5, 6]], 1) debe retornar [3, 4]
  */
 function obtenerFila(matriz, indiceFila) {
-  // TODO: Retorna la fila indicada
-  return [];
+  return matriz[indiceFila];
 }
 
 /**
@@ -331,8 +340,10 @@ function obtenerFila(matriz, indiceFila) {
  * Ejemplo: obtenerColumna([[1, 2], [3, 4], [5, 6]], 0) debe retornar [1, 3, 5]
  */
 function obtenerColumna(matriz, indiceColumna) {
-  // TODO: Extrae todos los elementos de la columna indicada
   const columna = [];
+  for (let i = 0; i < matriz.length; i++) {
+    columna.push(matriz[i][indiceColumna]);
+  }
   return columna;
 }
 
@@ -344,8 +355,14 @@ function obtenerColumna(matriz, indiceColumna) {
  * Ejemplo: transponer([[1, 2, 3], [4, 5, 6]]) debe retornar [[1, 4], [2, 5], [3, 6]]
  */
 function transponer(matriz) {
-  // TODO: Crea la matriz transpuesta
   const transpuesta = [];
+  for (let i = 0; i < matriz[0].length; i++) {
+    const fila = [];
+    for (let j = 0; j < matriz.length; j++) {
+      fila.push(matriz[j][i]);
+    }
+    transpuesta.push(fila);
+  }
   return transpuesta;
 }
 
