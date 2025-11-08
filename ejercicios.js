@@ -265,7 +265,7 @@ function filtrarMayores(numeros, limite) {
   }
   return mayores;
 }
-
+//
 /**
  * Ejercicio 4.5: Invertir un array (5 puntos)
  * @param {Array} arr - Array a invertir
