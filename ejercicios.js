@@ -344,9 +344,13 @@ function obtenerFila(matriz, indiceFila) {
  */
 function obtenerColumna(matriz, indiceColumna) {
   const columna = [];
+
   for (let i = 0; i < matriz.length; i++) {
-    columna.push(matriz[i][indiceColumna]);
+    if (indiceColumna < matriz[i].length) {
+      columna.push(matriz[i][indiceColumna]);
+    }
   }
+
   return columna;
 }
 
