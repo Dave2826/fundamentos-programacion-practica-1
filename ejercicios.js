@@ -310,7 +310,7 @@ function sumaMatriz(matriz) {
   }
   return suma;
 }
-
+//
 /**
  * Ejercicio 5.3: Obtener una fila (5 puntos)
  * @param {Array<Array<number>>} matriz - Matriz
