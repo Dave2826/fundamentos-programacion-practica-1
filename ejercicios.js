@@ -238,7 +238,7 @@ function promedioArray(numeros) {
  * Ejercicio 4.3: Encontrar el máximo (6 puntos)
  * @param {Array<number>} numeros - Array de números
  * @returns {number} - El número más grande del array
- */
+ */ 
 function encontrarMaximo(numeros) {
   if (numeros.length === 0) return 0;
   let maximo = numeros[0];
@@ -249,7 +249,6 @@ function encontrarMaximo(numeros) {
   }
   return maximo;
 }
-
 /**
  * Ejercicio 4.4: Filtrar números mayores a un valor (5 puntos)
  * @param {Array<number>} numeros - Array de números
