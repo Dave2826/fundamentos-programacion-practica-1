@@ -1,6 +1,6 @@
 // FUNDAMENTOS DE PROGRAMACIÓN - PRÁCTICA
 // Nombre del estudiante: _________________
-// Fecha: _________________
+// Fecha: ________________
 
 // ============================================
 // SECCIÓN 1: VARIABLES Y TIPOS DE DATOS (10 puntos)
